@@ -16,6 +16,11 @@ Notion's performance is a fairly well-known problem. Dealing with plenty of word
 
 This tool is very useful for me personally. 
 
+## Requirements
+
+1. Installed Python 3
+2. Notion account with page, created with SRS template (see the video)
+
 ## Usage
 
 Just run and answer today's cards:
@@ -45,7 +50,7 @@ accepted.
 Then the next card will appear.
 
 ## How to run
-
+0. Clone the repository. If you don't know how to do it, click [here](https://github.com/m-danya/notion-srs-cli/archive/refs/heads/main.zip) and unzip the archive into any place. Open that folder in the terminal ([how to do it on Windows](https://www.howtogeek.com/659411/how-to-change-directories-in-command-prompt-on-windows-10/#:~:text=If%20the%20folder%20you%20want,window%2C%20and%20then%20press%20Enter.&text=The%20directory%20you%20switched%20to%20will%20be%20reflected%20in%20the%20command%20line.))
 1. ~~`pip3 install notion`~~ `pip3 install git+https://github.com/jamalex/notion-py.git@refs/pull/294/merge` (for the moment of writing this doc, it's the way to use notion API with getting an 400 error **less frequently**)
 2. Configure the tool (see "Configuring")
 3. Run by `./notion-srs.py `
@@ -53,6 +58,9 @@ Then the next card will appear.
 ## Configuring
 
 *Note: if you're using Windows, you should type `python3 file.py ` in command line instead of `./file.py`*
+
+*Note 2: it's not as difficult as it may look*
+
 
 1. Open `config.py` file in a text editor
 
