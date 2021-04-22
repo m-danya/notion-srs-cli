@@ -83,6 +83,6 @@ Then the next card will appear.
 
    This error is raised if you somehow copied incorrectly the `token_v2` cookie (see "Configuring")
 
-## Possible TODO's
+## Possible improvements
  - Write a script that would be able to **add** words to the SRS
  - ?..
