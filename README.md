@@ -53,11 +53,11 @@ Then the next card will appear.
 0. Clone the repository. If you don't know how to do it, click [here](https://github.com/m-danya/notion-srs-cli/archive/refs/heads/main.zip) and unzip the archive into any place. Open that folder in the terminal ([how to do it on Windows](https://www.howtogeek.com/659411/how-to-change-directories-in-command-prompt-on-windows-10/#:~:text=If%20the%20folder%20you%20want,window%2C%20and%20then%20press%20Enter.&text=The%20directory%20you%20switched%20to%20will%20be%20reflected%20in%20the%20command%20line.))
 1. ~~`pip3 install notion`~~ `pip3 install git+https://github.com/jamalex/notion-py.git@refs/pull/294/merge` (for the moment of writing this doc, it's the way to use notion API with getting an 400 error **less frequently**)
 2. Configure the tool (see "Configuring")
-3. Run by `./notion-srs.py `
+3. Run by `python3 notion-srs.py` or `./notion-srs.py`
 
 ## Configuring
 
-*Note: if you're using Windows, you should type `python3 file.py ` in command line instead of `./file.py`*
+*Note: if you're using Linux, you can use `./file.py` in the command line instead of `python3 file.py`*
 
 *Note 2: it's not as difficult as it may look*
 
@@ -70,7 +70,7 @@ Then the next card will appear.
 
 3. Click on `"..."` -> `"Open as page"` at cards gallery, then get a link to the "today's view" (a view that shows cards for today) by `"..."` -> `"Copy link"` and past the link into the 5th line of `config.py`
 
-4. Save the `config.py` and run `get_props.py` by typing `./get_props.py`. You'll get column names list (if not an error, which I have nothing to do with) . Place them appropriately in `config.py` variables (between the quotation marks) like this:
+4. Save the `config.py` and run `get_props.py` by typing `python3 get_props.py`. You'll get column names list (if not an 400 error, which I have nothing to do with, see "Possible errors") . Place them appropriately in `config.py` variables (between the quotation marks) like this:
 
    ```python
    translation = 'perevod'
