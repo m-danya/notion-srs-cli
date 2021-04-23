@@ -9,7 +9,7 @@ client = NotionClient(token_v2=conf.token_v2)
 cards = client.get_collection_view(conf.collection_url)
 
 today_cards = cards.build_query(filter=cards.get('query2')['filter']).execute() 
-
+print(f"Hi! Cards for today: {len(today_cards)}\n")
 for card in today_cards:
     print('=> ', card.title, ' <=')
     print()
