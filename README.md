@@ -1,4 +1,4 @@
-# CLI for SRS in Notion
+# Command-line interface for SRS in Notion
 
 <img src="readme_images/notion-srs.gif" alt="notion-srs"  />
 
