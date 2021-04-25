@@ -6,7 +6,7 @@
 
 This video is crucial for understanding what is going on next:
 
-[![SRS](https://yt-embed.herokuapp.com/embed?v=YcD92j_pDNY)](https://youtu.be/YcD92j_pDNY)
+[![SRS](readme_images/yt_preview.png)](https://youtu.be/YcD92j_pDNY)
 
 SRS is a system that helps you to remember any foreign words/concepts/etc by making you trying to remember the right answer from time to time. The feature is that the interval of asking grows **exponentially** if you answer correctly, which guarantees the fact that you won't answer the same word more than 9 times in 2 years (if you never forget the answer to this question), so you can learn a lot of words efficiently. 
 
