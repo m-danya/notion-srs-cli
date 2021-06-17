@@ -21,8 +21,8 @@ for card in today_cards:
     if (card.get_property(conf.transcription)):
         print(card.get_property(conf.transcription))
     print()
-    c = input('(a = accept, d = decline, smth else = skip): ')
-    if (c == 'a'):
+    c = input('(enter = accept, d = decline, smth else = skip): ')
+    if (c == 'a' or c == ''): # backward compatibility
         print('accepted.')
         correct += 1
         if (card.get_property(conf.level) == '10'):
@@ -40,3 +40,19 @@ for card in today_cards:
 if (len(today_cards)):
     print(f"Cards answered correctly: {correct}/{len(today_cards)}")
 print("That's all for today!")
+
+print()
+print('Now let\'s add some words.')
+
+while True:
+    word = input('Word: ')
+    translation = input('Translation: ')
+    transcription = input('Transcription: ')
+    new_card = cards.collection.add_row()
+    new_card.icon = '🔹'
+    new_card.title = word
+    new_card.set_property(conf.translation, translation)
+    new_card.set_property(conf.date_wrong, datetime.today().date())
+    new_card.set_property(conf.level, '2')
+    print('Done!\n')
+
