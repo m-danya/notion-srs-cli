@@ -44,6 +44,8 @@ print("That's all for today!")
 print()
 print('Now let\'s add some words.')
 
+added = 0
+
 while True:
     word = input('Word: ')
     translation = input('Translation: ')
@@ -52,7 +54,9 @@ while True:
     new_card.icon = '🔹'
     new_card.title = word
     new_card.set_property(conf.translation, translation)
+    new_card.set_property(conf.transcription, transcription)
     new_card.set_property(conf.date_wrong, datetime.today().date())
     new_card.set_property(conf.level, '2')
-    print('Done!\n')
+    added += 1
+    print(f'Done! Cards added: {added}\n')
 
