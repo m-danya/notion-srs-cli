@@ -1,4 +1,7 @@
 # Command-line interface for SRS in Notion
+> ABANDONED
+
+This tool is abandoned in favor of [my srs system, which does not use Notion](https://github.com/m-danya/spaced-repetition-py). 
 
 <img src="readme_images/notion-srs.gif" alt="notion-srs"  />
 
